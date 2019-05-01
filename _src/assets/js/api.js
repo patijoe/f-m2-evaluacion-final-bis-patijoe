@@ -7,6 +7,7 @@ const eigthCards = document.querySelector('#eigth-cards');
 const btn = document.querySelector('.btn');
 let cardsNumber = fourCards.value;
 const cardsImg = [];
+localStorage.getItem('numberCards');
 
 function find() {
   fetch(`https://raw.githubusercontent.com/Adalab/cards-data/master/${cardsNumber}.json`)
@@ -47,10 +48,12 @@ function find() {
 
 function howManyCards (event) {
   cardsNumber = event.currentTarget.value;
-  console.log(cardsNumber);
+  remember();
 }
 
-
+function remember() {
+  localStorage.setItem('numberCards', cardsNumber);
+}
 
 function removeElements() {
   cardList.innerHTML = '';
