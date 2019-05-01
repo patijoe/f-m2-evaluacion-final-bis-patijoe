@@ -1,33 +1,29 @@
-'use strict';
-const cardList = document.querySelector('.card-list');
-const fourCards = document.querySelector('#four-cards');
-const sixCards = document.querySelector('#six-cards');
-const eigthCards = document.querySelector('#eigth-cards');
-const btn = document.querySelector('.btn');
-let cardsNumber = fourCards.value;
+// 'use strict';
 
-function createElements () {
+// function createElements () {
 
-  for (let i = 0; i<cardsNumber; i++) {
-    const newItem = document.createElement('li');
-    newItem.classList.add('newItem');
-    const newDiv = document.createElement('div');
-    newDiv.classList.add('new_div');
-    const newDiv1 = document.createElement('div');
-    newDiv1.classList.add('new_div1');
+//   for (let i = 0; i<cardsNumber; i++) {
+//     const newItem = document.createElement('li');
+//     newItem.classList.add('new_item');
+//     const newDiv = document.createElement('div');
+//     newDiv.classList.add('new_div');
+//     const newImg = document.createElement('img');
+//     newImg.classList.add('new_img');
+//     newImg.src = cardsImg[i];
 
-    newItem.appendChild(newDiv);
-    newItem.appendChild(newDiv1);
-    cardList.appendChild(newItem);
-  }
-}
+//     newDiv.appendChild(newImg);
+//     newItem.appendChild(newDiv);
+//     cardList.appendChild(newItem);
+//   }
+// }
 
-function howManyCards (event) {
-  cardsNumber = event.currentTarget.value;
-  console.log(cardsNumber);
-}
+// function howManyCards (event) {
+//   cardsNumber = event.currentTarget.value;
+//   console.log(cardsNumber);
+// }
 
-btn.addEventListener('click', createElements);
-fourCards.addEventListener('click', howManyCards);
-sixCards.addEventListener('click', howManyCards);
-eigthCards.addEventListener('click', howManyCards);
+
+// btn.addEventListener('click', createElements);
+// fourCards.addEventListener('click', howManyCards);
+// sixCards.addEventListener('click', howManyCards);
+// eigthCards.addEventListener('click', howManyCards);

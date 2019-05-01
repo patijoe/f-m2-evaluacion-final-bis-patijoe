@@ -17,8 +17,10 @@
 	},
 	"js": {
 		"src": [
-			"_src/assets/js/main.js",
+      "_src/assets/js/main.js",
+      "_src/assets/js/api.js",
 			"_src/assets/js/create-elements.js"
+
 		],
 		"dest": "public/assets/js/",
     "dist": "docs/assets/js/"
