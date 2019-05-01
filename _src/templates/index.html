@@ -1,20 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Evaluación final bis patiJoe</title>
-  <link rel="icon" href="favicon.png"/>
-	<link rel="stylesheet" href="assets/css/main.css">
+  <link rel="icon" href="favicon.png" />
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
+
 <body>
 
-    <div class="page">
+  <!-- <div class="page">
         <partial src="_header.html" label="Header"></partial>
         <partial src="_main.html" label="Main"></partial>
+    </div> -->
+
+  <h1 class="title">El juego de las parejas</h1>
+  <div class="container-form">
+
+    <div>
+      <label for="four-cards">
+        <input type="radio" name="number of cards" id="four-cards" value="4" checked>
+        4
+      </label>
     </div>
+
+    <div>
+      <label for="six-cards">
+        <input type="radio" name="number of cards" id="six-cards" value="6">
+        6
+      </label>
+    </div>
+
+    <div>
+      <label for="eigth-cards">
+        <input type="radio" name="number of cards" id="eigth-cards" value="8">
+        8
+      </label>
+    </div>
+
+  </div>
+
+  <button class="btn">Comenzar</button>
+
+  <ul class="card-list"></ul>
+
 
   <script src="assets/js/main.js"></script>
 </body>
+
 </html>
