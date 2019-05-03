@@ -5,9 +5,23 @@ const fourCards = document.querySelector('#four-cards');
 const sixCards = document.querySelector('#six-cards');
 const eigthCards = document.querySelector('#eigth-cards');
 const btn = document.querySelector('.btn');
-let cardsNumber = fourCards.value;
+let cardsNumber;
 const cardsImg = [];
-localStorage.getItem('numberCards');
+
+if(cardsNumber === null) {
+  cardsNumber = fourCards.value;
+} else {
+  cardsNumber = localStorage.getItem('numberCards');
+  if(cardsNumber === sixCards.value){
+    document.getElementById('four-cards').checked = false;
+    document.getElementById("six-cards").checked = true;
+  } else if (cardsNumber === eigthCards.value) {
+    document.getElementById('four-cards').checked = false;
+    document.getElementById("eigth-cards").checked = true;
+  } else {
+    document.getElementById('four-cards').checked = true;
+  }
+}
 
 function find() {
   fetch(`https://raw.githubusercontent.com/Adalab/cards-data/master/${cardsNumber}.json`)
